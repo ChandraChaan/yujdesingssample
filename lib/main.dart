@@ -1,9 +1,7 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
 import 'Config/app_pages.dart';
 import 'Network/logger.dart';
 import 'lang/translation_service.dart';
@@ -35,7 +33,7 @@ class designsYujApp extends StatelessWidget {
       logWriterCallback: Logger.write,
       getPages: AppPages.routes,
       initialRoute: AppPages.INITIAL,
-      locale: Locale('en', 'US'),
+      locale: const Locale('en', 'US'),
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),
     );
