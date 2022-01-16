@@ -1,4 +1,4 @@
-class ViewAllComplaints {
+class ViewAllHomePageLis {
   String id;
   String title;
   String description;
@@ -12,7 +12,7 @@ class ViewAllComplaints {
   String createdAt;
   String updatedAt;
 
-  ViewAllComplaints(
+  ViewAllHomePageLis(
       {this.id,
       this.title,
       this.description,
@@ -26,7 +26,7 @@ class ViewAllComplaints {
       this.createdAt,
       this.updatedAt});
 
-  ViewAllComplaints.fromJson(Map<String, dynamic> json) {
+  ViewAllHomePageLis.fromJson(Map<String, dynamic> json) {
     id = json['id'].toString();
     title = json['title'].toString();
     description = json['description'].toString();
