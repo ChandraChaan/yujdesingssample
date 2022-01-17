@@ -21,7 +21,6 @@ class LoginAPIModal {
         baseUrl: Helpers.baseUrl,
         extendedUrl: Helpers.login,
 
-        ///Put in helpers file     /api/pms-discussion-i/comments
         options: Options(
           headers: {"content-type": "application/json"},
         ),

@@ -48,7 +48,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               height: getHeight(context),
                               decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  image: AssetImage(img_login_background),
+                                  image: AssetImage(localimages.pink_rose),
                                   fit: BoxFit.fill,
                                 ),
                               ),
@@ -63,7 +63,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 margin: EdgeInsets.only(top: 18, left: 15),
                                 alignment: Alignment.centerLeft,
                                 child: Image.asset(
-                                  img_estreeetmart,
+                                  localimages.flutterWallpaper,
                                   scale: 5,
                                 ),
                               ),
@@ -607,7 +607,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             height: getHeight(context),
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage(img_login_background),
+                                image: AssetImage(localimages.pink_flower),
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -622,7 +622,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               margin: EdgeInsets.only(top: 57, left: 30),
                               alignment: Alignment.centerLeft,
                               child: Image.asset(
-                                img_estreeetmart,
+                                localimages.flutterWallpaper,
                                 scale: 5,
                               ),
                             ),
