@@ -30,7 +30,7 @@ class NetimageWidget extends StatelessWidget {
         ),
       ),
       errorWidget: (context, url, error) => Image.asset(
-        'assets/images/mtProfile.jpg',
+        'assets/images/splashScreen_flutter.jpg',
         fit: BoxFit.fill,
       ),
     );

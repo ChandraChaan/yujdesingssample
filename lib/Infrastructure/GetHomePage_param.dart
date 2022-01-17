@@ -15,7 +15,7 @@ class GetHomePageAPIModel {
   NetworkDataClass getParam() {
     return NetworkDataClass(
         baseUrl: Helpers.baseUrl,
-        extendedUrl: Helpers.userGet,
+        extendedUrl: Helpers.login,
 
         options: Options(
           headers: {},
