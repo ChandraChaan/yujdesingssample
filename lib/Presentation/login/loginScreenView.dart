@@ -56,7 +56,7 @@ class _loginScreenState extends State<loginScreen> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                      AssetImage(localimages.flutterWallpaper),
+                                      AssetImage(localimages.blue_rose),
                                   fit: BoxFit.fill,
                                 ),
                               ),
@@ -109,7 +109,7 @@ class _loginScreenState extends State<loginScreen> {
                                         width: 20,
                                         height: 45,
                                         child: Image.asset(localimages
-                                            .flutterWallpaper) //SvgPicture.asset(img_google_logo),
+                                            .img_google_logos) //SvgPicture.asset(img_google_logo),
                                         ),
                                     SizedBox(
                                       width: 10,

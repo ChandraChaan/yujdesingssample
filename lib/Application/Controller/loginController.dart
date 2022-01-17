@@ -38,12 +38,12 @@ class LoginController extends GetxController {
         .dynamic(LoginAPIModal(username: username, pasword: password))
         .then((data) {
       Get.back();
-      userNameValue = data.results['first_name'].toString() +
-          (data.results['last_name'].toString() == "null"
-              ? "None"
-              : data.results['last_name'].toString());
-
-      LocalDb.write('userid', '${data.results['data']['id'].toString()}');
+      // userNameValue = data.results['first_name'].toString() +
+      //     (data.results['last_name'].toString() == "null"
+      //         ? "None"
+      //         : data.results['last_name'].toString());
+      //
+      // LocalDb.write('userid', '${data.results['data']['id'].toString()}');
       Get.toNamed(Routes.homePageView);
     }, onError: (err) {
       Get.back();
