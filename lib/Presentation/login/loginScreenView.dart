@@ -17,9 +17,9 @@ class _loginScreenState extends State<loginScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      print('add something');
-    });
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   print('add something');
+    // });
   }
 
   bool _showPassword1 = true;
@@ -55,8 +55,7 @@ class _loginScreenState extends State<loginScreen> {
                               height: getHeight(context),
                               decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  image:
-                                      AssetImage(localimages.blue_rose),
+                                  image: AssetImage(localimages.blue_rose),
                                   fit: BoxFit.fill,
                                 ),
                               ),
@@ -381,7 +380,8 @@ class _loginScreenState extends State<loginScreen> {
                                 CircleAvatar(
                                   radius: 10,
                                   backgroundColor: c_White,
-                                  child: Image.asset(localimages.img_google_logos), //SvgPicture.asset(img_google_logo),
+                                  child: Image.asset(localimages
+                                      .img_google_logos), //SvgPicture.asset(img_google_logo),
                                 ),
                                 SizedBox(
                                   width: 10,
@@ -569,7 +569,8 @@ class _loginScreenState extends State<loginScreen> {
                                     Container(
                                       width: 25,
                                       height: 45,
-                                      child: Image.asset(localimages.img_google_logos),
+                                      child: Image.asset(
+                                          localimages.img_google_logos),
 
                                       // SvgPicture.asset(
                                       //   img_google_logo,
@@ -869,8 +870,8 @@ class _loginScreenState extends State<loginScreen> {
                                 CircleAvatar(
                                   radius: 14,
                                   backgroundColor: c_White,
-                                  child: Image.asset(
-                                      localimages.img_google_logos), //SvgPicture.asset(img_google_logo),
+                                  child: Image.asset(localimages
+                                      .img_google_logos), //SvgPicture.asset(img_google_logo),
                                 ),
                                 SizedBox(
                                   width: 10,

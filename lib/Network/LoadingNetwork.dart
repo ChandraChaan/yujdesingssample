@@ -36,7 +36,7 @@ class LoadingNetwork {
 
         switch (networkDataClass.requestType) {
           case NetworkString.requestPost:
-            // Logger.writeLog('params:' + networkDataClass.param);
+            Logger.writeLog('params:' + networkDataClass.param);
             Logger.writeLog('baseUrl:' + networkDataClass.baseUrl);
             Logger.writeLog('extendedUrl:' + networkDataClass.extendedUrl);
 // print(networkDataClass.param.toString());

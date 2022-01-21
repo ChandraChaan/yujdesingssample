@@ -13,7 +13,7 @@ class LoginAPIModal {
   LoginAPIModal({this.pasword, this.username});
 
   Map<String, dynamic> toJsonResources() {
-    return {"username": username, "password": pasword, "type": "2"};
+    return {"email": username, "password": pasword};
   }
 
   NetworkDataClass getParam() {

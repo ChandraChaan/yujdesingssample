@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:yujdesingssample/Presentation/dashBoard/slideShowView.dart';
 import 'package:yujdesingssample/Utils/constant.dart';
 
-class HomePageView extends StatelessWidget {
+import 'dragAndDropView.dart';
+
+class HomePageView extends StatefulWidget {
+  @override
+  State<HomePageView> createState() => _HomePageViewState();
+}
+
+class _HomePageViewState extends State<HomePageView> {
+  Offset _offset = Offset.zero;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,15 +19,11 @@ class HomePageView extends StatelessWidget {
         child: Column(
           children: [
             SideOffer(),
-            ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                itemBuilder: (BuildContext ctx, int index) {
-                  return Container(
-                      width: getWidth(context),
-                      child: Center(child: SizedBox(height:100,child: Text('$index'))));
-                },
-                itemCount: 10)
+            SizedBox(
+              height: 50,
+            ),
+            SizedBox(
+                height: MediaQuery.of(context).size.height, child: DragView()),
           ],
         ),
       ),
